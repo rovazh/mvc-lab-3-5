@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Author List</title>
+    </head>
+    <body>
+        <%- include('partials/navigation.ejs')%>
+        <h1>>Author List</h1>
+        <ul>
+            <% authors.forEach(function(author){ %>
+                <li>
+                    <p>ID: <%= author.id %></p>
+                    <p>Name: <%= author.name %></p>
+                </li>
+            <%  }); %>
+        </ul>
+    </body>
+</html>
